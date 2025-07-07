@@ -1,18 +1,10 @@
 /* CSS */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: #121212; /* Optional: dark background */
-    color: #e0e0e0; /* Light text for contrast */
+  color: #e0e0e0; /* Light text for contrast */
 }
-
-
-
-
-
-
-
-
 
 /* Navbar styles */
 .navbar {
@@ -20,7 +12,6 @@ body {
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: #e0e0e0; /* Light text for contrast */
-
 }
 
 .nav-list {
@@ -43,22 +34,16 @@ body {
   color: #ffffff;
 }
 
-
-
-
-
-
-
 /* index.html Styles */
 /* Intro section styles */
 .intro {
   text-align: center;
   padding: 4rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .intro h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 4rem;
 }
@@ -69,31 +54,28 @@ body {
 }
 
 .wave-gif {
-    width: 100%;
-    height: 20rem;
-    margin: 2rem auto; /* Center the gif */
-        display: block; /* Center the gif */
-    opacity: 0.3; /* Optional: make the gif semi-transparent */
+  width: 100%;
+  height: 20rem;
+  margin: 2rem auto; /* Center the gif */
+  display: block; /* Center the gif */
+  opacity: 0.3; /* Optional: make the gif semi-transparent */
 }
 
 .background-image-intro {
-    width: 100%;
-    height: 1px;
-    z-index: -1; /* Place the image behind other content */
-    opacity: 0.7; /* Optional: make the background image semi-transparent */
+  width: 100%;
+  height: 1px;
+  z-index: -1; /* Place the image behind other content */
+  opacity: 0.7; /* Optional: make the background image semi-transparent */
 }
-
-
-
 
 /* Projects section styles */
 .projects {
-    margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 .projects h2 {
   color: #e0e0e0; /* Soft blue for project titles */
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -102,20 +84,19 @@ body {
 .projects a {
   text-decoration: none;
   color: #9cdcfe;
-  padding: 0; 
+  padding: 0;
   font-weight: 700;
   line-height: 3rem;
-  font-weight: 'Nunito', sans-serif;
+  font-weight: "Nunito", sans-serif;
 }
 
 .projects a:hover {
   color: #ffffff;
-transition: color 0.5s ease;
-
+  transition: color 0.5s ease;
 }
 
 .projects li::before {
-  content: '→ ';  /* This adds the arrow before the <li> text */
+  content: "→ "; /* This adds the arrow before the <li> text */
 }
 
 .projects li {
@@ -126,25 +107,45 @@ transition: color 0.5s ease;
   list-style: none; /* Remove default list styling */
 }
 
-
 /* Footer styles */
 .footer {
-  background-color: #2c2f33; /* Dark grey */
-  color: #e0e0e0; /* Soft white text */
-  text-align: center;
-  padding: 1.5rem 1rem;
-  font-size: 0.9rem;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  background-color: #2c2f33;
+  position: relative;
+  height: 80px; /* or whatever height works for your footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  margin-top: 8rem;
 }
+
+.footer-content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.center-text {
+  margin: 0;
+}
+
+.timeFooter {
+  position: absolute;
+  right: -180px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
 
 
 /* contact.html Styles */
 .image-me-contact {
-    width: 100%;
-    height: auto;
-    max-width: 500px; /* Limit the maximum width */
-    opacity: 0.8; /* Optional: make the image semi-transparent */
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* Limit the maximum width */
+  opacity: 0.8; /* Optional: make the image semi-transparent */
 }
 
 .contact-container {
@@ -183,8 +184,6 @@ transition: color 0.5s ease;
   margin-bottom: 20px;
   line-height: 1.5;
 }
-
-
 
 .contact-form-section a {
   color: #007acc;
@@ -226,7 +225,6 @@ transition: color 0.5s ease;
   background-color: #005f99;
 }
 
-
 /* projects.html Styles */
 
 .page-title {
@@ -261,13 +259,11 @@ transition: color 0.5s ease;
   border-radius: 10px;
 }
 
-
 .project-card h3 {
   margin-top: 10px;
   font-size: 1.1rem;
-    color: #2c3e50; /* Darker text for contrast */
+  color: #2c3e50; /* Darker text for contrast */
 }
-
 
 /* about.html */
 .about-section {
