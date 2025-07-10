@@ -14,15 +14,25 @@ projectLink.forEach((link) => {
 
 // Timezone and current time display in footer
 const timezone = "Europe/Stockholm";
-const now = new Date();
 
-const currentTime = new Intl.DateTimeFormat("en-US", {
-  timeZone: timezone,
-  timeStyle: "short",
-  hour12: false,
-}).format(now);
+function updateTime() {
+  const now = new Date();
+  const currentTime = new Intl.DateTimeFormat("en-US", {
+    timeZone: timezone,
+    timeStyle: "short",
+    hour12: false,
+  }).format(now);
 
-document.querySelector(".timeFooter").textContent = "CEST (Stockholm time) " + currentTime;
+  document.querySelector(".timeFooter").textContent =
+    "CEST (Stockholm time) " + currentTime;
+
+  // Calculate delay until the next full minute
+  const delay = 60000 - (now.getSeconds() * 1000 + now.getMilliseconds());
+  setTimeout(updateTime, delay);
+}
+
+// Start the loop
+updateTime();
 
 // Button hover effect
 const buttons = document.querySelectorAll(".button1");
